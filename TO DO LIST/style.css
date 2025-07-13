@@ -1,0 +1,89 @@
+body {
+    background-image: url(https://thumbs.dreamstime.com/z/composition-to-do-list-textured-background-150063529.jpg);
+    font-family: Arial, sans-serif;
+}
+
+.todo-container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#add-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+#add-btn:hover {
+    background: #0056b3;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.todo-text {
+    flex: 1;
+    cursor: pointer;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
