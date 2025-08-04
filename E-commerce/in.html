@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>NS SHOP</h1>
+      <nav>
+        <button onclick="toggleCart()">
+          🛒 Cart (<span id="cart-count">0 </span>)
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="products" id="products">
+      </section>
+
+      <aside class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <hr />
+        <p>Total: ₹<span id="total">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+      </aside>
+    </main>
+    <script src="script.js"></script>
+     <footer>
+        <div class="container">
+            <p>&copy; <<<<2025 NS>>>></p>
+        </div>
+    </footer>
+  </body>
+</html>
